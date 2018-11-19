@@ -13,5 +13,5 @@ def nombre_de_commentaires(fichier):
                 nb_commentaires+=1
         return nb_commentaires
 
-print(nombre_de_commentaires("EventCandidatATest.rb"))
+#print(nombre_de_commentaires("EventCandidatATest.rb"))
 
