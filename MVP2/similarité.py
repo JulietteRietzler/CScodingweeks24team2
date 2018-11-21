@@ -19,7 +19,7 @@ def tableau_ressemblance(liste):
    tableau=np.zeros((n,n))
    for i in range(n):
        for j in  range(i,n):
-           tableau[i][j]= similarite(liste[i],liste[j])
+           tableau[i][j]= similarite(str(liste[i]),str(liste[j]))
    return(tableau)
 
 def ressemblance(tableau):
@@ -36,9 +36,9 @@ def ressemblance(tableau):
       m=m/n**2
       return(m)
    else:
-      print('erreur')
+      return(0)
 
-print(ressemblance(np.array([[0.9,1],[0.5,0.08]])))
+#print(ressemblance(np.array([[0.9,1],[0.5,0.08]])))
 
 def pourcentage_de_ressemblance_code(fichier):
    decoupage=decoupage_du_code(fichier)
@@ -50,4 +50,4 @@ def pourcentage_de_ressemblance_code(fichier):
    pourcentage= ressemblance(tableau_debut)+ressemblance(tableau_if)+ressemblance(tableau_for)+ressemblance(tableau_while)+ressemblance(tableau_until)
    return(pourcentage/5)
 
-print(pourcentage_de_ressemblance_code('EventCandidatA.rb'))
+#print(pourcentage_de_ressemblance_code('EventCandidatA.rb'))
