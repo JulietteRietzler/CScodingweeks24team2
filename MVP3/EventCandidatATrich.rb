@@ -1,0 +1,162 @@
+class EventCandidatA < ApplicationRecord
+  self.table_name = 'events'
+  KIND = %w(opening appointment).freeze
+
+# Table name: events
+
+#  id               :integer          not null, primary key
+#  starts_at        :datetime
+#  ends_at          :datetime
+#  kind             :string
+#  weekly_recurring :boolean
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+
+
+  # Validations of model
+
+  validates :kind, presence: true, inclusion: { in: KIND, message: 'is not valid' }
+  validates :starts_at, presence: true
+  validates :ends_at, presence: true
+  validate :date_order_validation # starts at can't be greater than ends at,
+           :event_same_date # verify that the event concerns a single  day
+
+
+  # Sould return the availabilities of the 7 next days of a day given
+  def self.availabilities(start_date)
+    # Create an array of the 7 days from start date
+    array_of_days_to_display = (start_date..(start_date + 6)).to_a
+
+    # initiating result array
+    results_to_display = []
+
+    array_of_days_to_display.each do |day|
+      day_result_schedule = {}
+
+      # Create opening schedule of the day
+      day_result_schedule = self.event_specific_query(day, 'opening', day_result_schedule)
+      day_result_schedule = self.event_recurring_query(day, 'opening', day_result_schedule)
+
+      # Change Availabilities acording to appointments
+      day_result_schedule = self.event_specific_query(day, 'appointment', day_result_schedule)
+      day_result_schedule = self.event_recurring_query(day, 'appointment', day_result_schedule)
+
+      # Store results of the day
+      results_to_display << {date: day, slots: self.schedule_availibilities(day_result_schedule) }
+    end
+
+    return results_to_display
+  end
+
+
+
+  with_options if: :appointment? do |appointment|
+    appointment.validates :weekly_recurring, absence: true
+    appointment.validate :appointment_cannot_be_outside_of_opening_hours
+  end
+
+  scope :openings, -> { where(kind: :opening) }
+  scope :appointments, -> { where(kind: :appointment) }
+  scope :recurring, -> { where(weekly_recurring: true) }
+  scope :recurring_on, -> (day) { recurring.where(EventCandidatA.arel_table[:starts_at].lt(day.beginning_of_day)).
+      where("STRFTIME('%w', starts_at) = :week_day", week_day: day.to_date.wday.to_s) }
+  scope :overlapping, -> (starts_at, ends_at) { where(starts_at: (starts_at..ends_at)).
+      or(EventCandidatA.where(ends_at: (starts_at..ends_at))) }
+  scope :cover, -> (starts_at, ends_at) { where("TIME(starts_at) <= TIME(:starts_at) AND
+      TIME(ends_at) >= TIME(:ends_at)", starts_at: starts_at, ends_at: ends_at) }
+  scope :on, -> (day) { where(EventCandidatA.arel_table[:starts_at].gteq(day.beginning_of_day).and(
+      EventCandidatA.arel_table[:ends_at].lteq(day.end_of_day))) }
+  scope :openings_on, -> (day) { openings.on(day).or(recurring_on(day)) }
+  scope :appointments_on, -> (day) { appointments.on(day) }
+
+  def opening?
+    kind.eql? 'opening'
+  end
+
+  def appointment?
+    kind.eql? 'appointment'
+  end
+
+  def self.availabilities(start_date, end_date = start_date + 6.day)
+    availabilities = []
+
+    (start_date..end_date).each do |date|
+      availabilities << { date: date.to_date, slots: slots_available(date)}
+    end
+
+    return availabilities
+  end
+
+
+  # VALIDATION METHODS -----------------------------------------------------------------------
+
+  # Method that query specifics events related to day given and kind and return the schedule
+  def self.event_specific_query(day, kind, day_result_schedule)
+    EventCandidateB.where(kind: kind, starts_at: day.midnight..day.end_of_day).each do |event|
+        day_result_schedule = event.day_schedule_creator(kind, day_result_schedule)
+    end
+    return day_result_schedule
+  end
+
+  # Method that query recurring events related to day given and kind and return the schedule
+  def self.event_recurring_query(day, kind, day_result_schedule)
+    EventCandidateB.where(kind: kind, weekly_recurring: true).each do |event|
+      if event.starts_at.wday == day.wday
+        day_result_schedule = event.day_schedule_creator(kind, day_result_schedule)
+      end
+    end
+    day_result_schedule
+    return day_result_schedule
+  end
+
+  # Method that create/update the schedule of the day with this format:
+  # { :09:30 => {availability:true}, :10:00 => {availibility:false} .... }
+  # regarding the event type
+  def day_schedule_creator(kind, schedule_hash)
+    counter = self.starts_at
+    while counter < self.ends_at
+      if kind == "opening"
+        # Didn't go past TEST01: schedule_hash[counter.strftime("%H:%M").to_sym] = {availibility: true}
+        schedule_hash[counter.strftime("%-H:%M").to_sym] = {availibility: true}
+      elsif kind == "appointment"
+        # Didn't go past TEST01: schedule_hash[counter.strftime("%H:%M").to_sym] = {availibility: false}
+        schedule_hash[counter.strftime("%-H:%M").to_sym] = {availibility: false}
+      end
+      counter += 30.minutes
+    end
+    return schedule_hash
+  end
+
+  # Method that transform the schedule creator into result output format ["09:30", "10:00"]
+  def self.schedule_availibilities(day_schedule_hash)
+    slots = []
+    day_schedule_hash.each do |key,value|
+      slots << key.to_s if value[:availibility]
+    end
+    return slots
+  end
+
+  private
+
+  # VALIDATION METHODS -------------------------------------------------------
+
+  # Date order validation
+  def date_order_validation
+    if self[:ends_at] && self[:starts_at]
+      if self[:ends_at] < self[:starts_at]
+        errors[:ends_at] << "should be after start date"
+        return false
+      end
+    end
+  end
+
+  # Date same day validation
+  def event_same_date
+    if self[:ends_at] && self[:starts_at]
+      if self[:ends_at].to_date != self[:starts_at].to_date
+        errors[:ends_at] << "should be the same day of start date"
+        return false
+      end
+    end
+  end
+end
