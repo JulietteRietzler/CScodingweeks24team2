@@ -1,6 +1,6 @@
 import json
 from MVP2.similarité import *
-#from MVP2.validité_nom import *
+from MVP2.validité_nom import *
 def resultats(fichier):
    '''
    :param fichier: fichier à analyser et à parser
@@ -14,8 +14,9 @@ def resultats(fichier):
        d["duplication probable"]=True
    else:
        d["duplication probable"]=False
-   #d["nom des fonctions"]=
-   #d["nom des variables"]=
+   d["moyenne longueur nom des fonctions"]= moyenne_longueur_nom_fonction(fichier)
+   d["nom des variables"]=moyenne_longueur_variables(fichier)
+   d["nom de variable trop court"]= 
    return(json.dumps(d,indent=4))
 
 print(resultats('EventCandidatA.rb'))
