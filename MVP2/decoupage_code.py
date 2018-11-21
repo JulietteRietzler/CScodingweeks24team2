@@ -41,4 +41,3 @@ def decoupage_du_code(fichier):
 
 
 
-print(decoupage_du_code('EventCandidatA.rb'))
