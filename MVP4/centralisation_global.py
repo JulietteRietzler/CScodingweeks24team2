@@ -6,7 +6,7 @@ def resultat_final(fichier, fichier_test, autres_fichiers):
     '''
     :param fichier: fichier du candidat
     :param fichier_test: fichier contenant les tests du candidats
-    :param autres_fichiers: tuple contenat les autres fichiers de la base de données
+    :param autres_fichiers: tuple contenant les autres fichiers de la base de données
     :return: les différents résultats des 3 premiers MVP
     '''
     d=resultats(fichier,fichier_test)[1]
