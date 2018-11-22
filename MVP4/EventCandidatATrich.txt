@@ -1,0 +1,107 @@
+class EventCandidateB < ApplicationRecord
+
+  self.table_name = 'events'
+
+  # Validation du mod�le 
+
+  validates :type, presence: true, inclusion: ["opening", "appointment"]
+
+  validates :commence_par, presence: true
+
+  validates :fini_par, presence: true
+
+  validate :date_commande # verify that fini_par is after commence_par
+
+  validate :manger_du_canard # verify that the event concerns a single  day
+
+
+  def self.availabilities(start_date)
+    # Create an array of the 7 days from start date
+    array_of_days_to_display = (start_date..(start_date + 6)).to_a
+
+    # initiating result array
+    results_to_display = []
+
+    array_of_days_to_display.each do |day|
+      il_va_faire_tout_noir = {}
+
+      # Create opening schedule of the day
+      il_va_faire_tout_noir = self.event_specific_query(day, 'opening', il_va_faire_tout_noir)
+      il_va_faire_tout_noir = self.event_recurring_query(day, 'opening', il_va_faire_tout_noir)
+
+      # Change Availabilities acording to appointments
+      il_va_faire_tout_noir = self.event_specific_query(day, 'appointment', il_va_faire_tout_noir)
+      il_va_faire_tout_noir = self.event_recurring_query(day, 'appointment', il_va_faire_tout_noir)
+
+      # Store results of the day
+      results_to_display << {date: day, slots: self.schedule_availibilities(il_va_faire_tout_noir) }
+    end
+
+    return results_to_display
+  end
+
+  def self.event_specific_query(day, type, il_va_faire_tout_noir)
+    EventCandidateB.where(type: type, commence_par: day.midnight..day.end_of_day).each do |event|
+        il_va_faire_tout_noir = event.day_schedule_creator(type, il_va_faire_tout_noir)
+    end
+    return il_va_faire_tout_noir
+  end
+
+  def self.event_recurring_query(day, type, il_va_faire_tout_noir)
+    EventCandidateB.where(type: type, weekly_recurring: true).each do |event|
+      if event.commence_par.wday == day.wday
+        il_va_faire_tout_noir = event.day_schedule_creator(type, il_va_faire_tout_noir)
+      end
+    end
+    il_va_faire_tout_noir
+    return il_va_faire_tout_noir
+  end
+
+  def starts_at_cannot_be_greater_than_ends_at
+    counter = self.commence_par
+    while counter < self.fini_par
+      if type == "opening"
+        # Didn't go past TEST01: schedule_hash[counter.strftime("%H:%M").to_sym] = {availibility: true}
+        schedule_hash[counter.strftime("%-H:%M").to_sym] = {availibility: true}
+      elsif type == "appointment"
+        # Didn't go past TEST01: schedule_hash[counter.strftime("%H:%M").to_sym] = {availibility: false}
+        schedule_hash[counter.strftime("%-H:%M").to_sym] = {availibility: false}
+      end
+      counter += 30.minutes
+    end
+    return schedule_hash
+  end
+
+  def self.schedule_availibilities(day_schedule_hash)
+    slots = []
+    day_schedule_hash.each do |key,value|
+      slots << key.to_s if value[:availibility]
+    end
+    return slots
+  end
+
+  private
+
+  def date_commande
+    if self[:fini_par] && self[:commence_par]
+      if self[:fini_par] < self[:commence_par]
+        errors[:fini_par] << "should be after start date"
+        return false
+      end
+    end
+  end
+
+  def manger_du_canard
+    if self[:fini_par] && self[:commence_par]
+      if self[:fini_par].to_date != self[:commence_par].to_date
+        errors[:fini_par] << "should be the same day of start date"
+        return false
+      end
+    end
+  end
+end
+
+  test "should not save event with an invalid kind" do
+    evenement = EventCandidatA.new kind: 'other', starts_at: DateTime.parse("2013-08-04 09:30"), ends_at: DateTime.parse("2013-08-04 12:30")
+    assert_not event.save, "Saved the event with an invalid kind"
+  end

@@ -15,6 +15,10 @@ def resultats_comparaison(fichier,fichier_test,*autres_fichiers):
  d["nombre moyenne de noms de méthodes identiques avec les fichiers"]=nombre_moyen_identique_methodes(fichier,*autres_fichiers)
  d["fichier le plus similaire"]=comparaison_methode(fichier,*autres_fichiers)[1]
  d["fichier ayant les tests les plus similaires"]=comparaison_test(fichier_test,*autres_fichiers)[1]
- return(json.dumps(d,indent=4))
+ if comparaison_methode(fichier,*autres_fichiers)[0]>=0.6 or comparaison_test(fichier_test,*autres_fichiers)[0]:
+     d["fraude probable"]=True
+ else:
+     d["fraude probable"]=False
+ return(json.dumps(d,indent=4),d)
 
 print(resultats_comparaison('EventCandidatA.rb','EventCandidatATEST.rb',('EventCandidatATrich.txt')))

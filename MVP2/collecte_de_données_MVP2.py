@@ -3,7 +3,7 @@ from MVP2.similarité import *
 from MVP2.validité_nom import *
 from MVP2.aeration import *
 
-def resultats(fichier):
+def donnees(fichier):
    '''
    :param fichier: fichier à analyser et à parser
    :retourne: un fichier json avec le pourcentage de ressemblance dans le fichier, si il y a un risque de duplication et
@@ -20,6 +20,6 @@ def resultats(fichier):
    d["nom des variables"]=moyenne_longueur_variables(fichier)
    d["nom de variable trop court"]= critere_variable_pas_trop_court(fichier)
    d["pourcentage d'aeration"]=pourcentage_d_espaces(fichier)
-   return(json.dumps(d,indent=4))
+   return(json.dumps(d,indent=4),d)
 
-print(resultats('EventCandidatA.rb'))
+#print(donnees('EventCandidatA.rb'))
