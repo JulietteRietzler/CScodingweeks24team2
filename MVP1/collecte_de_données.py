@@ -15,9 +15,10 @@ def resultats(fichier,fichierTest):
    d["rapport nombre de fonctions et nombre de tests"]=nb_de_tests(fichierTest)/nb_de_fonctions(fichier)
    d["nombre moyen d'asserts par test"]= nb_moyen_de_asserts_par_test(fichierTest)
    d["nombre_de_commentaires"]=nombre_de_commentaires(fichier)+nombre_de_commentaires(fichierTest)
-   return(json.dumps(d,indent=4))
+   d["rapport nombre de fonctions et nombre de commentaires"]=nombre_de_commentaires(fichier)/nb_de_fonctions(fichier)
+   return(json.dumps(d,indent=4),d)
 
 
 
 
-print(resultats("EventCandidatA.rb","EventCandidatATest.rb"))
+#print(resultats("EventCandidatA.rb","EventCandidatATest.rb"))

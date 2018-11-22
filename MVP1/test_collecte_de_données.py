@@ -10,6 +10,7 @@ def test_resultats():
     assert type(nb_de_fonctions('EventCandidatATest.rb'))==int
     assert type(nb_de_tests('EventCandidatATest.rb'))==int
     assert type(nb_moyen_de_asserts_par_test('EventCandidatATest.rb'))== float
-    assert type(resultats('EventCandidatA.rb','EventCandidatATest.rb'))==str
+    assert type(resultats('EventCandidatA.rb','EventCandidatATest.rb')[0])==str
+    assert type(resultats('EventCandidatA.rb','EventCandidatATest.rb')[1])==dict
 
 

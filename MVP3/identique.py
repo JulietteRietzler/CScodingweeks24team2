@@ -8,7 +8,6 @@ def nombre_moyen_identique_methodes(fichier,*autres_fichiers):
    :return: nombre moyen de noms identiques pour les tests du fichiers à analyser et les tests des autres fichiers
    '''
    liste_nom=trouver_nom_fonction(fichier)+trouver_scopes(fichier)
-   print(liste_nom)
    n=len(liste_nom)
    liste_moyenne=[]
    for i in range (len(autres_fichiers)):
