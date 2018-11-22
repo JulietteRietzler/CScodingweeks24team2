@@ -156,7 +156,7 @@ def moyenne_longueur_nom_fonction(doc):
 
 def critere_variable_pas_trop_court(doc):
     '''Retourne True si le candidat n'utilises pas de variables de longueur 1'''
-    variables = supprimer_doublons( trouver_scopes(doc) + trouver_variables(doc) + trouver_nom_fct(doc))
+    variables = supprimer_doublons( trouver_scopes(doc) + trouver_variables(doc) + trouver_nom_fonction(doc))
     for mots in variables :
         if len(mots) == 1 :
             return(False)

@@ -16,7 +16,8 @@ def resultats(fichier):
        d["duplication probable"]=False
    d["moyenne longueur nom des fonctions"]= moyenne_longueur_nom_fonction(fichier)
    d["nom des variables"]=moyenne_longueur_variables(fichier)
-   d["nom de variable trop court"]= 
+   d["nom de variable trop court"]= critere_variable_pas_trop_court(fichier)
+   d["aeration"]=critere_aeration_code(fichier)
    return(json.dumps(d,indent=4))
 
 print(resultats('EventCandidatA.rb'))
