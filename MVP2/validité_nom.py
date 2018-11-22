@@ -71,32 +71,17 @@ def supprimer_blancs_de_liste(liste):
            new_list.append(mot)
     return(new_list)
 
-def nb_occurrences(liste):
-    """
-     Renvoie un dictionnaire avec les éléments d'une liste en keys et leur nombre d'occurrences en values
-    :param liste
-    :return: dictionnaire
-    """
-    occurrences = {}
-    for word in liste :
-       if word in occurrences:
-           occurrences[word] += 1
-       else:
-           occurrences[word] = 1
-    return occurrences
 
 
-def supprimer_doublons(liste) :
-    '''
-    Supprime les doublons d'une liste
-    :param liste
-    :return: liste sans doublons
-    '''
-    occurrences = nb_occurrences(liste)
-    liste_epuree = []
-    for key in occurrences.keys() :
-        liste_epuree.append(key)
-    return liste_epuree
+def supprimer_doublons(liste):
+   """Prend une liste en argument et retourne une liste sans doublons"""
+   image = liste[:]
+   resultat = []
+   for elem in image :
+       liste.remove(elem)
+       if not elem in liste :
+           resultat.append(elem)
+   return(resultat)
 
 def trouver_variables(doc):
     '''
@@ -162,28 +147,3 @@ def critere_variable_pas_trop_court(doc):
             return(False)
     return(True)
 
-def critere_aeration_code(code):
-
-   '''
-   Evalue si le candidat à bien aéré son code
-   :param code: fichier
-   :return: booléen
-   '''
-
-   saut_de_ligne_absent = 0
-   mots = []
-
-   with open(code, "r") as file :
-
-       for line in file :
-           mots = mots + line.split(" ")
-
-       mots_sans_blancs = supprimer_blancs_de_liste(mots)
-       l = len(mots_sans_blancs)
-       # print(mots_sans_blancs)
-
-       for i in range(l-1):
-           if mots_sans_blancs[i] == "end\n" and mots_sans_blancs[i+1] == "def" :
-               saut_de_ligne_absent += 1
-
-   return saut_de_ligne_absent ==0

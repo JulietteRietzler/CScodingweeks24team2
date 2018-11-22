@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d16e1b2d-2718-4a89-b612-a4cc7859e0cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MVP3/comparaison.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVP2/aeration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVP2/test_aeration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVP3/identique.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVP3/test_comparaison.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVP3/test_identique.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP2/ExamCandidat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/ExamCandidat.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVP2/test_validité_nom.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/test_validite_nom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP2/test_validite_nom.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/test_validite_nom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVP2/validité_nom.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/validité_nom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVP3/similarité_méthode.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP3/similarité_méthode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP3/centralisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP3/centralisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP3/comparaison.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP3/comparaison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP3/récupération_méthodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP3/récupération_méthodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVP3/récupération_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP3/récupération_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,68 +35,79 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="40" />
-          <entry key="rb" value="11" />
+          <entry key="py" value="52" />
+          <entry key="rb" value="13" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="40" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="7037" />
+          <entry key="py" value="8353" />
           <entry key="rb" value="2" />
-          <entry key="txt" value="5" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="7037" />
+          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="Python" value="8353" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/decoupage_code.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVP3/centralisation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="58" />
+            <state relative-caret-position="130">
+              <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
               <folding>
-                <marker date="1542788303641" expanded="true" signature="0:2" ph="..." />
-                <marker date="1542788303641" expanded="true" signature="33:38" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/validité_nom.py">
+        <entry file="file://$PROJECT_DIR$/MVP3/identique.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="158" column="103" selection-start-line="158" selection-start-column="103" selection-end-line="158" selection-end-column="103" />
+            <state relative-caret-position="222">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
-                <marker date="1542873857154" expanded="true" signature="4294:4579" ph="..." />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP1/test_collecte_de_données.py">
+        <entry file="file://$PROJECT_DIR$/MVP3/test_identique.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="68">
+              <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1542633078488" expanded="true" signature="467:472" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVP3/comparaison.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="834">
+              <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,75 +120,6 @@
               <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/test_validite_nom.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
-              <folding>
-                <marker date="1542875521579" expanded="true" signature="3797:3798" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP3/similarité_méthode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP3/centralisation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MVP3/comparaison.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,16 +155,22 @@
         <option value="$PROJECT_DIR$/MVP2/similarité.py" />
         <option value="$PROJECT_DIR$/MVP2/test_collecte_de_données_MVP2.py" />
         <option value="$PROJECT_DIR$/MVP3/nom.py" />
-        <option value="$PROJECT_DIR$/MVP3/récupération_méthodes.py" />
         <option value="$PROJECT_DIR$/MVP2/test.py" />
-        <option value="$PROJECT_DIR$/MVP3/récupération_test.py" />
-        <option value="$PROJECT_DIR$/MVP3/centralisation.py" />
-        <option value="$PROJECT_DIR$/MVP2/validité_nom.py" />
-        <option value="$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py" />
         <option value="$PROJECT_DIR$/MVP3/similarité_méthode.py" />
         <option value="$PROJECT_DIR$/MVP2/test_validité_nom.py" />
+        <option value="$PROJECT_DIR$/MVP3/récupération_méthodes.py" />
+        <option value="$PROJECT_DIR$/MVP3/récupération_test.py" />
+        <option value="$PROJECT_DIR$/MVP3/test_comparaison.py" />
+        <option value="$PROJECT_DIR$/MVP3/EventCandidatATrich.txt" />
+        <option value="$PROJECT_DIR$/MVP3/test_identique.py" />
+        <option value="$PROJECT_DIR$/MVP3/identique.py" />
         <option value="$PROJECT_DIR$/MVP3/comparaison.py" />
+        <option value="$PROJECT_DIR$/MVP2/validité_nom.py" />
         <option value="$PROJECT_DIR$/MVP2/test_validite_nom.py" />
+        <option value="$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py" />
+        <option value="$PROJECT_DIR$/MVP2/aeration.py" />
+        <option value="$PROJECT_DIR$/MVP2/test_aeration.py" />
+        <option value="$PROJECT_DIR$/MVP3/centralisation.py" />
       </list>
     </option>
   </component>
@@ -280,7 +236,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_validite_nom.test_nom">
+  <component name="RunManager" selected="Python.centralisation">
+    <configuration name="aeration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="projet1Doctolib" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MVP2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MVP2/aeration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="centralisation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="projet1Doctolib" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MVP3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MVP3/centralisation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="collecte_de_données_MVP2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projet1Doctolib" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,7 +300,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_validite_nom.test_nom" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_aeration.test_pourcentages_d_espaces" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="projet1Doctolib" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,11 +311,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validite_nom.test_nom&quot;" />
+      <option name="_new_target" value="&quot;test_aeration.test_pourcentages_d_espaces&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_validité_nom.test_validite_nom" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_aeration.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="projet1Doctolib" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,54 +326,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validité_nom.test_validite_nom&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_validite_nom.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="projet1Doctolib" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MVP2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/MVP2/test_validite_nom.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_validité_nom.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="projet1Doctolib" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MVP2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/MVP2/test_validité_nom.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/MVP2/test_aeration.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.aeration" />
+      <item itemvalue="Python tests.pytest in test_aeration.py" />
       <item itemvalue="Python.collecte_de_données_MVP2" />
-      <item itemvalue="Python tests.pytest in test_validité_nom.py" />
-      <item itemvalue="Python tests.pytest for test_validité_nom.test_validite_nom" />
-      <item itemvalue="Python tests.pytest in test_validite_nom.py" />
-      <item itemvalue="Python tests.pytest for test_validite_nom.test_nom" />
+      <item itemvalue="Python tests.pytest for test_aeration.test_pourcentages_d_espaces" />
+      <item itemvalue="Python.centralisation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_validite_nom.test_nom" />
-        <item itemvalue="Python tests.pytest in test_validite_nom.py" />
-        <item itemvalue="Python tests.pytest for test_validité_nom.test_validite_nom" />
-        <item itemvalue="Python tests.pytest in test_validité_nom.py" />
+        <item itemvalue="Python.centralisation" />
+        <item itemvalue="Python tests.pytest in test_aeration.py" />
+        <item itemvalue="Python tests.pytest for test_aeration.test_pourcentages_d_espaces" />
         <item itemvalue="Python.collecte_de_données_MVP2" />
+        <item itemvalue="Python.aeration" />
       </list>
     </recent_temporary>
   </component>
@@ -383,35 +351,35 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_validité_nom_py - 2018.11.22 at 09h 14m 42s.xml">
-      <configuration name="pytest in test_validité_nom.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_comparaison_test_comparaisons - 2018.11.22 at 09h 55m 53s.xml">
+      <configuration name="pytest for test_comparaison.test_comparaisons" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_validité_nom_py - 2018.11.22 at 09h 15m 05s.xml">
-      <configuration name="pytest in test_validité_nom.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_comparaison_test_comparaisons - 2018.11.22 at 09h 56m 00s.xml">
+      <configuration name="pytest for test_comparaison.test_comparaisons" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_validité_nom_py - 2018.11.22 at 09h 16m 54s.xml">
-      <configuration name="pytest in test_validité_nom.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_comparaison_test_comparaisons - 2018.11.22 at 09h 56m 36s.xml">
+      <configuration name="pytest for test_comparaison.test_comparaisons" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_validité_nom_test_validite_nom - 2018.11.22 at 09h 17m 10s.xml">
-      <configuration name="pytest for test_validité_nom.test_validite_nom" configurationId="tests" />
+    <history-entry file="pytest_for_test_comparaison_test_comparaisons - 2018.11.22 at 09h 58m 39s.xml">
+      <configuration name="pytest for test_comparaison.test_comparaisons" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_validité_nom_test_validite_nom - 2018.11.22 at 09h 17m 31s.xml">
-      <configuration name="pytest for test_validité_nom.test_validite_nom" configurationId="tests" />
+    <history-entry file="pytest_for_test_comparaison_test_comparaisons - 2018.11.22 at 09h 59m 29s.xml">
+      <configuration name="pytest for test_comparaison.test_comparaisons" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_validite_nom_py - 2018.11.22 at 09h 25m 44s.xml">
-      <configuration name="pytest in test_validite_nom.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_validite_nom_test_nom - 2018.11.22 at 09h 25m 59s.xml">
+    <history-entry file="pytest_for_test_validite_nom_test_nom - 2018.11.22 at 10h 01m 22s.xml">
       <configuration name="pytest for test_validite_nom.test_nom" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_validite_nom_py - 2018.11.22 at 09h 27m 10s.xml">
-      <configuration name="pytest in test_validite_nom.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_identique_test_nombre_moyen_identique_methodes - 2018.11.22 at 10h 11m 04s.xml">
+      <configuration name="pytest for test_identique.test_nombre_moyen_identique_methodes" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_validite_nom_py - 2018.11.22 at 09h 28m 27s.xml">
-      <configuration name="pytest in test_validite_nom.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_aeration_py - 2018.11.22 at 10h 33m 20s.xml">
+      <configuration name="pytest in test_aeration.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_validite_nom_test_nom - 2018.11.22 at 09h 32m 03s.xml">
-      <configuration name="pytest for test_validite_nom.test_nom" configurationId="tests" />
+    <history-entry file="pytest_for_test_aeration_test_pourcentages_d_espaces - 2018.11.22 at 10h 35m 26s.xml">
+      <configuration name="pytest for test_aeration.test_pourcentages_d_espaces" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_aeration_py - 2018.11.22 at 10h 38m 28s.xml">
+      <configuration name="pytest in test_aeration.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -436,15 +404,15 @@
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21354581" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -558,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVP3/EventCandidatATest.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/EventCandidatA.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -576,27 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVP3/récupération_méthodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVP3/récupération_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVP3/EventCandidatA.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -632,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVP2/test_collecte_de_données_MVP2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/test_validité_nom.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -656,12 +586,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py">
+    <entry file="file://$PROJECT_DIR$/MVP3/récupération_méthodes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="414">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/EventCandidatATest.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/test_comparaison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,46 +613,121 @@
     <entry file="file://$PROJECT_DIR$/MVP3/similarité_méthode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVP3/centralisation.py">
+    <entry file="file://$PROJECT_DIR$/MVP3/EventCandidatA.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+        <state relative-caret-position="51">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/EventCandidatATrich.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/récupération_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/test_identique.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/validité_nom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="158" column="103" selection-start-line="158" selection-start-column="103" selection-end-line="158" selection-end-column="103" />
+        <state relative-caret-position="222">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
-            <marker date="1542873857154" expanded="true" signature="4294:4579" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP2/aeration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP2/test_collecte_de_données_MVP2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP2/test_aeration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/test_validite_nom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="187">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
           <folding>
-            <marker date="1542875521579" expanded="true" signature="3797:3798" ph="..." />
+            <marker date="1542879126988" expanded="true" signature="3797:3798" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/identique.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVP3/comparaison.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        <state relative-caret-position="834">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP3/centralisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

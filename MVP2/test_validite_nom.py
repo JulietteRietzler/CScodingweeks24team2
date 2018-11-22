@@ -108,22 +108,12 @@ fichier.close()
 
 def test_nom():
     assert indice([0,1,2],2) == 2
-
     liste = ["salut",'salut1(parenth)','slt(paretn,deux)']
     assert Ajoute_arguments(liste) == ['salut', 'salut1', 'parenth', 'slt', 'paretn', 'deux']
-
     assert enleve_variable_en_egal(['salut', 'end_date = start_date', 'cc']) == ['salut', 'cc', 'end_date ']
-
-
     assert enleve_espace_string('salut ') == 'salut'
-
-
     assert supprimer_blancs_de_liste(["hello","ca va","", " "]) == ["hello","ca va"]
-
-    assert critere_aeration_code("ExamCandidat.txt") == False
-
     assert trouver_variables("ExamCandidat.txt") ==['table_name', 'KIND', 'end_date', 'availabilities', 'openings', 'appointments', 'slots']
-
     assert trouver_scopes("ExamCandidat.txt") == ['openings', 'appointments', 'recurring', 'recurring_on', 'overlapping', 'cover', 'on', 'openings_on', 'appointments_on']
 
 print(trouver_variables("ExamCandidat.txt"))

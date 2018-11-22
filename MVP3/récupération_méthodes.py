@@ -36,4 +36,4 @@ def récupérationm(fichier):
                 index+=1
         return(liste_méthodes)
 
-print(récupérationm('EventCandidatA.rb'))
+#print(récupérationm('EventCandidatA.rb'))
