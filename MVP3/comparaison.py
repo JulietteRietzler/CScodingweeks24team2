@@ -5,7 +5,7 @@ from MVP3.similarité_méthode import *
 
 
 
-def comparaison_test(fichier,*autres_fichiers):
+def comparaison_test(fichier,autres_fichiers):
    '''
    :param fichier: fichier à analyser
    :param autres_fichiers: autres fichiers qui sont comparés au fichier à analyser
@@ -15,7 +15,7 @@ def comparaison_test(fichier,*autres_fichiers):
    liste_moyenne=[]
    for i in range (len(autres_fichiers)):
        liste_similarite=[]
-       liste_comparaison=récupérationt(autres_fichiers[i])
+       liste_comparaison=récupérationt(str(autres_fichiers[i]))
        for k in range (len(liste_test)):
            for j in range (len(liste_comparaison)):
                m= similarite_methode(liste_test[k],liste_comparaison[j])
@@ -28,7 +28,7 @@ def comparaison_test(fichier,*autres_fichiers):
 
 #print(comparaison_test('EventCandidatATest.rb',('EventCandidatATrich.txt')))
 
-def comparaison_methode(fichier,*autres_fichiers):
+def comparaison_methode(fichier,autres_fichiers):
    '''
    :param fichier: fichier à analyser
    :param autres_fichiers: autres fichiers qui sont comparés au fichier à analyser
@@ -38,7 +38,7 @@ def comparaison_methode(fichier,*autres_fichiers):
    liste_moyenne=[]
    for i in range (len(autres_fichiers)):
        liste_similarite=[]
-       liste_comparaison=récupérationm(autres_fichiers[i])
+       liste_comparaison=récupérationm(str(autres_fichiers[i]))
        for k in range (len(liste_methode)):
            for j in range (len(liste_comparaison)):
                m=similarite_methode(liste_methode[k],liste_comparaison[j])
@@ -51,7 +51,7 @@ def comparaison_methode(fichier,*autres_fichiers):
 
 #print(comparaison_methode('EventCandidatA.rb',('EventCandidatATrich.txt')))
 
-def comparaison_nom_methode(fichier,*autres_fichiers):
+def comparaison_nom_methode(fichier,autres_fichiers):
    '''
    :param fichier: fichier à analyser
    :param autres_fichiers: autres fichiers qui sont comparés au fichier à analyser
@@ -61,7 +61,7 @@ def comparaison_nom_methode(fichier,*autres_fichiers):
    liste_moyenne=[]
    for i in range (len(autres_fichiers)):
        liste_similarite=[]
-       liste_comparaison=trouver_nom_fonction(autres_fichiers[i])+trouver_scopes(autres_fichiers[i])
+       liste_comparaison=trouver_nom_fonction(str(autres_fichiers[i]))+trouver_scopes(str(autres_fichiers[i]))
        for k in range (len(liste_nom_methode)):
            for j in range (len(liste_comparaison)):
                m=similarite_methode(liste_nom_methode[k],liste_comparaison[j])

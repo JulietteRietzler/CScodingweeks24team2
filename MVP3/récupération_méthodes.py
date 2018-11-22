@@ -15,7 +15,7 @@ def récupérationm(fichier):
     :param fichier: le fichier à analyser.
     :return: une liste des différentes méthodes.
     '''
-    with open(fichier,'r')as code:
+    with open(fichier, 'r')as code:
         codelignes=code.readlines()
         liste_méthodes=[]
         index=0

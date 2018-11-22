@@ -41,6 +41,10 @@ def ressemblance(tableau):
 #print(ressemblance(np.array([[0.9,1],[0.5,0.08]])))
 
 def pourcentage_de_ressemblance_code(fichier):
+   '''
+   :param fichier: fichier à analyser
+   :return: moyenne des pourcentages de ressemblance entre les différents éléments d'un fichier
+   '''
    decoupage=decoupage_du_code(fichier)
    tableau_debut=tableau_ressemblance(decoupage[0])
    tableau_if=tableau_ressemblance(decoupage[1])

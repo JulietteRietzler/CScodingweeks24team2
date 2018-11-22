@@ -2,7 +2,7 @@ import pytest
 from MVP3.comparaison import *
 
 fichier='EventCandidatA.rb'
-autres_fichiers=('EventCandidatATrich.txt')
+autres_fichiers=['EventCandidatATrich.txt']
 fichier_test='EventCandidatATest.rb'
 
 def test_comparaisons():
