@@ -11,7 +11,7 @@ def identique(str1, str2):
    else:
        return(False)
 
-def similatite_methode(methode1,metode2):
+def similarite_methode(methode1,methode2):
    '''
    :param methode1,methode2: deux chaines de carctères de codes de deux méthodes à comparer
    :return:
