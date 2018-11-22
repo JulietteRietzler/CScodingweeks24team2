@@ -1,7 +1,7 @@
 from MVP3.similarité_méthode import *
 from MVP2.validité_nom import *
 
-def nombre_moyen_identique_methodes(fichier,*autres_fichiers):
+def nombre_moyen_identique_methodes(fichier,autres_fichiers):
    '''
    :param fichier: fichier à analyser
    :param autres_fichiers: autres fichiers qui sont comparés au fichier à analyser

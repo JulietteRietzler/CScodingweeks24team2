@@ -1,6 +1,11 @@
 
 
 def decoupage_du_code(fichier):
+    '''
+    :param fichier: fichier à analyser
+    :return: 5 listes dans lesquelles sont recensées respectivement les débuts de fonction, les boucles if, for, while et
+    until
+    '''
     with open(fichier,'r')as code:
         index=0
         codelignes=code.readlines()
