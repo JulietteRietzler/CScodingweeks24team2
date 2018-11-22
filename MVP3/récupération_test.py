@@ -19,4 +19,4 @@ def récupérationt(fichier):
                 index+=1
         return(liste_tests)
 
-print(récupérationt('EventCandidatATest.rb'))
+#print(récupérationt('EventCandidatATest.rb'))
