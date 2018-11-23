@@ -67,4 +67,4 @@ def pourcentage_de_ressemblance_code(fichier):
       return('vide')
    return(pourcentage/nombre_liste)
 
-print(pourcentage_de_ressemblance_code('event_candidate_d_duplicated.rb'))
+#print(pourcentage_de_ressemblance_code('event_candidate_d_duplicated.rb'))
