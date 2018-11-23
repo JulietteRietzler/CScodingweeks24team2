@@ -22,3 +22,4 @@ def resultats_comparaison(fichier,fichier_test,autres_fichiers, autres_fichiers_
  return(json.dumps(d,indent=4),d)
 
 
+print(resultats_comparaison('EventCandidatA.rb','EventCandidatATest.rb', ['event_candidate_b.rb','event_candidate_c.rb'],['event_candidate_b_test.rb','event_candidate_c_test.rb']))

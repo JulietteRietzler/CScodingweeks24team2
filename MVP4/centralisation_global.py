@@ -16,4 +16,4 @@ def resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)
     d.update(resultats_comparaison(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1])
     return(json.dumps(d,indent=4),d)
 
-#print(resultat_final('EventCandidatA.rb','EventCandidatATest.rb',('EventCandidatATrich.txt')))
+print(resultat_final('EventCandidatA.rb','EventCandidatATest.rb', ['event_candidate_b.rb','event_candidate_c.rb'],['event_candidate_b_test.rb','event_candidate_c_test.rb']))

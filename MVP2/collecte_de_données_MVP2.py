@@ -18,7 +18,7 @@ def donnees(fichier):
        d["duplication probable"]=False
    d["moyenne longueur nom des fonctions"]= moyenne_longueur_nom_fonction(fichier)
    d["nom des variables"]=moyenne_longueur_variables(fichier)
-   d["nom de variable trop court"]= critere_variable_pas_trop_court(fichier)
+   d["nom de variable correcte"]= critere_variable_pas_trop_court(fichier)
    d["pourcentage d'aeration"]=pourcentage_d_espaces(fichier)
    return(json.dumps(d,indent=4),d)
 
