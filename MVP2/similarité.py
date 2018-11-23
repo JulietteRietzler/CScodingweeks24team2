@@ -52,6 +52,19 @@ def pourcentage_de_ressemblance_code(fichier):
    tableau_while=tableau_ressemblance(decoupage[3])
    tableau_until=tableau_ressemblance(decoupage[4])
    pourcentage= ressemblance(tableau_debut)+ressemblance(tableau_if)+ressemblance(tableau_for)+ressemblance(tableau_while)+ressemblance(tableau_until)
-   return(pourcentage/5)
+   nombre_liste=0
+   if ressemblance(tableau_debut)!=0:
+      nombre_liste+=1
+   if ressemblance(tableau_if)!=0:
+      nombre_liste+=1
+   if ressemblance(tableau_for)!=0:
+      nombre_liste+=1
+   if ressemblance(tableau_while)!=0:
+      nombre_liste+=1
+   if ressemblance(tableau_until)!=0:
+      nombre_liste+=1
+   if nombre_liste==0:
+      return('vide')
+   return(pourcentage/nombre_liste)
 
-#print(pourcentage_de_ressemblance_code('EventCandidatA.rb'))
+print(pourcentage_de_ressemblance_code('event_candidate_d_duplicated.rb'))
