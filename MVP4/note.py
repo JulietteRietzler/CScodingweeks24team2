@@ -44,8 +44,8 @@ def note_candidat(fichier, fichier_test, autres_fichiers, autres_fichiers_test):
     note += note_long_nom_fonction(resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1])
     note += note_long_nom_variables(resultat_final(fichier, fichier_test, autres_fichiers,autres_fichiers_test)[1])
     note += aeration(resultat_final(fichier, fichier_test, autres_fichiers,autres_fichiers_test)[1])
-    note += resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1]["nom de variable trop court"]
-    note += resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1]["duplication probable"] * 4
+    note += resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1]["nom de variable correcte"]
+    note += (1-resultat_final(fichier, fichier_test, autres_fichiers, autres_fichiers_test)[1]["duplication probable"] )* 4
     return(note / total * 20)
 
 

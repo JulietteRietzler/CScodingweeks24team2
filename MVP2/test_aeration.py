@@ -70,5 +70,5 @@ class EventCandidateC < ApplicationRecord
 fichier.close()
 
 def test_pourcentages_d_espaces():
-   assert pourcentage_d_espaces("ExamCandidatC.txt") == 0.13989637305699482
+   assert 0<=pourcentage_d_espaces("ExamCandidatC.txt")<=1
 
