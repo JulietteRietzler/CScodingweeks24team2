@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d16e1b2d-2718-4a89-b612-a4cc7859e0cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MVP2/similarité.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP2/similarité.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVP4/MVP4_produit.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVP4/MVP4_produit.py" afterDir="false" />
-    </list>
+    <list default="true" id="d16e1b2d-2718-4a89-b612-a4cc7859e0cf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +21,7 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="145" />
+          <entry key="py" value="147" />
           <entry key="rb" value="25" />
           <entry key="txt" value="3" />
         </counts>
@@ -34,7 +31,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="145" />
+          <entry key="Python" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,22 +53,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP2/decoupage_code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-              <folding>
-                <marker date="1542966574118" expanded="true" signature="225:227" ph="..." />
-                <marker date="1542966574118" expanded="true" signature="445:450" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVP2/similarité.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="400">
               <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -90,6 +74,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVP1/nb_fonctions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVP1/collecte_de_données.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/event_candidate_d_duplicated.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -103,18 +108,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVP3/centralisation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -245,16 +238,6 @@
               <item name="projet1Doctolib" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet1Doctolib" type="462c0819:PsiDirectoryNode" />
               <item name="MVP2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet1Doctolib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet1Doctolib" type="462c0819:PsiDirectoryNode" />
-              <item name="MVP3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet1Doctolib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet1Doctolib" type="462c0819:PsiDirectoryNode" />
-              <item name="MVP4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -439,11 +422,11 @@
     <frame x="-6" y="0" width="1292" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21354581" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21354581" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,13 +546,6 @@
           <folding>
             <marker date="1542623081214" expanded="true" signature="161:166" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVP1/nb_fonctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -792,16 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVP1/collecte_de_données.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/collecte_de_données_MVP2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -884,10 +850,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MVP2/similarité.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="400">
           <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP1/nb_fonctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVP1/collecte_de_données.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
