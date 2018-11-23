@@ -54,4 +54,4 @@ def decoupage_du_code(fichier):
         return(splitDebut, splitIf, splitFor, splitWhile, splitUntil)
 
 
-print(decoupage_du_code('EventCandidatA.rb'))
+#print(decoupage_du_code('EventCandidatA.rb'))

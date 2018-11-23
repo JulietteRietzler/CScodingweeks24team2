@@ -21,4 +21,4 @@ def resultats(fichier,fichierTest):
 
 
 
-print(resultats("EventCandidatA.rb","EventCandidatATest.rb"))
+#print(resultats("EventCandidatA.rb","EventCandidatATest.rb"))
